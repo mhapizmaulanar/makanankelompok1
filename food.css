@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  background-color: #f34b09;
+  margin: 0;
+  padding: 0;
+}
+
+.bar {
+  width: 100%;
+  height: auto;
+  background-color: aliceblue;
+}
+
+.swiper {
+  width: 90%;
+  max-width: 600px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.swiper-slide h2 {
+  margin: 10px 0;
+  color: #333;
+}
+
+a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 50px;
+  text-decoration: none;
+  color: rgb(58, 10, 233);
+}

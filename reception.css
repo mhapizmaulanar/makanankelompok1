@@ -1,8 +1,14 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  background: orange;
   margin: 0;
   padding: 20px;
+}
+
+bar {
+  width: 100%;
+  height: auto;
+  background-color: aliceblue;
 }
 
 .container {
@@ -65,4 +71,12 @@ body {
 
 .price {
   color: #333;
+}
+
+a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 50px;
+  text-decoration: none;
+  color: rgb(58, 10, 233);
 }

@@ -1,82 +1,87 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background: orange;
-  margin: 0;
+  background-color: #f88b0d;
+  color: #070707;
   padding: 20px;
 }
 
-bar {
-  width: 100%;
-  height: auto;
-  background-color: aliceblue;
+.back-link {
+  text-decoration: none;
+  color: #0b0bf1;
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.title{
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  justify-items: center;
 
 .card {
-  background: white;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
 }
 
 .card-content {
-  padding: 15px;
+  padding: 20px;
 }
 
 .card h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.card p {
-  margin: 5px 0;
-  color: #666;
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  margin-top: 10px;
+  text-align: left;
+  font-size: 1rem;
 }
 
-.info span {
-  display: flex;
-  align-items: center;
+.info h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.star {
-  color: goldenrod;
-  margin-left: 5px;
+.info ul {
+  list-style-type: none;
+  padding-left: 20px;
 }
 
-.location {
-  color: red;
-  margin-right: 5px;
+.info li {
+  margin-bottom: 8px;
+  font-size: 1rem;
 }
 
-.price {
-  color: #333;
-}
-
-a {
-  display: inline-block;
-  margin: 10px;
-  font-size: 50px;
-  text-decoration: none;
-  color: rgb(58, 10, 233);
-}

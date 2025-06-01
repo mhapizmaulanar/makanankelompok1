@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,15 +10,18 @@
   <body>
     <div class="container">
       <div class="login">
-        <form action="">
+        <form action="semantic.html" method="get">
           <h1>Login</h1>
           <hr />
           <p>WILUJENG SUMPING</p>
-          <label for="">Email</label>
-          <input type="text" placeholder="Sunda@gmail.com" />
-          <label for="">Password</label>
-          <input type="password" placeholder="Password" />
-          <a href="semantic.html" class="button">Login</a>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Sunda@gmail.com" required />
+          
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="123" required />
+          
+          <button type="submit" class="button">Login</button>
 
           <p>
             <a href="#">Forgot password</a>
